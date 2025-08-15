@@ -1,9 +1,10 @@
 #include <stdio.h>
 
+int square(int x) {
+    return x * x;
+}
+
 int main(void) {
-    int numbers[5] = {10, 20, 30, 40, 50};
-    for (int i = 0; i < 5; i++) {
-        printf("numbers[%d] = %d\n", i, numbers[i]);
-    }
+    printf("Square of 5 is %d\n", square(5));
     return 0;
 }
